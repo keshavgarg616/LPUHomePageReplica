@@ -2,6 +2,9 @@
 
 A **replica of Lovely Professional University's homepage**, built to showcase my **HTML and CSS design skills**. This project highlights my ability to recreate professional, responsive layouts with attention to detail, user experience, and visual structure.
 
+Hosted [here](https://keshavgarg616.github.io/LPUHomePageReplica/).  
+(keshavgarg616.github.io/LPUHomePageReplica/)
+
 ## ✨ Project Highlights
 
 -   🔵 **University-Themed UI** – Inspired by a figma of LPU's homepage (Jalandhar campus).
