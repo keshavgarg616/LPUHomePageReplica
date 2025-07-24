@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+        <link rel="icon" href="images/favicon.png" type="image/png" />
+        <title>LPU</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="vertically-center">
+                    <img
+                        src="images/lpu-logo.png"
+                        alt="LPU Logo"
+                        class="lpu-logo"
+                    />
+                </div>
+                <div class="navbar-links-container hidden-menu">
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Admissions</a></div>
+                    <div><a href="#">Academics</a></div>
+                    <div><a href="#">Research</a></div>
+                    <div><a href="#">Placements</a></div>
+                    <div><a href="#">Campus Life</a></div>
+                    <div><a href="#">Disciplines</a></div>
+                    <div>
+                        <button class="apply-now-button my-btn">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+                <button class="hamburger-btn my-btn" onclick="toggleNavbar()">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M3 6H21M3 12H21M3 18H21"
+                            stroke="#121112"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </button>
+            </nav>
+            <hr />
+            <div class="secondary-navbar">
+                <div><a href="#">Highlights</a></div>
+                <div><a href="#">Placement Statistics</a></div>
+                <div><a href="#">Placement Support</a></div>
+                <div><a href="#">Our Alumni</a></div>
+                <div><a href="#">Industry Partnerships</a></div>
+                <div><a href="#">FAQs</a></div>
+            </div>
+            <hr />
+        </header>
+        <div class="banner">
+            <div>
+                <svg
+                    width="16"
+                    height="18"
+                    viewBox="0 0 16 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M14.7135 7.09853L8.74883 1.13388C8.13222 0.51724 7.12879 0.517205 6.51212 1.13388C5.95777 1.68819 5.91003 2.53359 6.31939 3.13726L6.31109 3.17878C5.88106 5.32911 4.83414 7.28535 3.28344 8.83602L0.547612 11.5718C-0.0705054 12.19 -0.0706108 13.1904 0.547612 13.8086L2.03873 15.2997C2.65681 15.9178 3.65729 15.9178 4.27544 15.2997L4.64824 14.9269L7.25774 17.5364C7.87586 18.1545 8.87627 18.1546 9.49442 17.5364C10.1111 16.9197 10.1111 15.9163 9.49442 15.2997L8.37607 14.1813L8.74886 13.8086C9.36698 13.1905 9.36705 12.1901 8.74886 11.5719L8.49553 11.3185C9.74178 10.446 11.1571 9.8385 12.6686 9.53619L12.7107 9.52779C13.3278 9.94442 14.1712 9.87745 14.7135 9.33517H14.7135C15.3301 8.71856 15.3301 7.7152 14.7135 7.09853ZM3.52988 14.5541C3.32387 14.7601 2.9903 14.7601 2.78429 14.5541L1.29317 13.063C1.08712 12.8569 1.08712 12.5235 1.29317 12.3174L3.90264 9.70789L6.13935 11.9446L3.52988 14.5541ZM8.74883 16.0452C8.95435 16.2508 8.95435 16.5852 8.74883 16.7908C8.5433 16.9963 8.20879 16.9963 8.00327 16.7908L5.39376 14.1813L6.13935 13.4357L8.74883 16.0452ZM6.88491 12.6902C7.0434 12.5317 7.28063 12.2889 7.65505 11.9691L8.00327 12.3174C8.20932 12.5235 8.20932 12.8569 8.00327 13.063L7.63047 13.4358L6.88491 12.6902ZM6.90731 11.2215L4.62574 8.9399C5.84844 7.52806 6.72404 5.86148 7.19249 4.05094L11.7963 8.65472C9.98573 9.12314 8.31918 9.99874 6.90731 11.2215ZM13.9678 8.58957C13.7618 8.79559 13.4283 8.79559 13.2222 8.58957L7.25767 2.625C7.05162 2.41891 7.05162 2.08549 7.25767 1.87944C7.46373 1.67339 7.79722 1.67339 8.00327 1.87944L13.9678 7.84398C14.1733 8.04954 14.1733 8.38398 13.9678 8.58957Z"
+                        fill="#121112"
+                    />
+                    <path
+                        d="M4.27443 11.5718C4.06859 11.3659 3.73475 11.3659 3.52887 11.5718L2.78331 12.3174C2.57744 12.5233 2.57744 12.8571 2.78331 13.0629C2.98915 13.2688 3.32303 13.2688 3.52887 13.0629L4.27443 12.3174C4.4803 12.1115 4.4803 11.7777 4.27443 11.5718ZM11.1692 0C10.878 0 10.642 0.236039 10.642 0.527203V1.58161C10.642 1.87277 10.878 2.10881 11.1692 2.10881C11.4604 2.10881 11.6964 1.87277 11.6964 1.58161V0.527203C11.6964 0.236039 11.4604 0 11.1692 0ZM15.3868 4.21756H14.3324C14.0412 4.21756 13.8052 4.45359 13.8052 4.74476C13.8052 5.03592 14.0412 5.27196 14.3324 5.27196H15.3868C15.678 5.27196 15.914 5.03592 15.914 4.74476C15.914 4.45359 15.6779 4.21756 15.3868 4.21756ZM14.7052 1.20878C14.4993 1.0029 14.1655 1.0029 13.9596 1.20878L12.9052 2.26318C12.6993 2.46906 12.6993 2.80287 12.9052 3.00874C13.1111 3.21462 13.4449 3.21465 13.6508 3.00874L14.7052 1.95434C14.9111 1.74846 14.9111 1.41469 14.7052 1.20878Z"
+                        fill="#121112"
+                    />
+                </svg>
+            </div>
+            <div>Today is the last day to take Admission Test Phase 1</div>
+        </div>
+        <div class="header-img-container">
+            <img src="images/triple-img.png" class="triple-img" />
+            <div class="header-text">
+                <h1>All <span style="color: #ee7d00">Programs</span></h1>
+                <p>
+                    Our programs are designed with the aim of nurturing
+                    innovation and empowering change. We believe in the
+                    transformative power of ideas and their ability to shape the
+                    future. Join us on this journey of innovation and.
+                </p>
+
+                <div class="header-phone-number-container">
+                    <div class="phone-number-bar">|</div>
+                    <div>
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_70_15635)">
+                                <path
+                                    d="M8.66698 0.666755C8.66698 0.489944 8.73722 0.320375 8.86225 0.19535C8.98727 0.070326 9.15684 8.80827e-05 9.33365 8.80827e-05C11.1012 0.00202915 12.7957 0.705031 14.0456 1.95485C15.2954 3.20468 15.9984 4.89924 16.0003 6.66676C16.0003 6.84357 15.9301 7.01314 15.8051 7.13816C15.68 7.26318 15.5105 7.33342 15.3337 7.33342C15.1568 7.33342 14.9873 7.26318 14.8622 7.13816C14.7372 7.01314 14.667 6.84357 14.667 6.66676C14.6654 5.25276 14.103 3.89712 13.1031 2.89727C12.1033 1.89742 10.7477 1.33501 9.33365 1.33342C9.15684 1.33342 8.98727 1.26318 8.86225 1.13816C8.73722 1.01314 8.66698 0.843566 8.66698 0.666755ZM9.33365 4.00009C10.0409 4.00009 10.7192 4.28104 11.2193 4.78114C11.7194 5.28123 12.0003 5.95951 12.0003 6.66676C12.0003 6.84357 12.0706 7.01314 12.1956 7.13816C12.3206 7.26318 12.4902 7.33342 12.667 7.33342C12.8438 7.33342 13.0134 7.26318 13.1384 7.13816C13.2634 7.01314 13.3337 6.84357 13.3337 6.66676C13.3326 5.60621 12.9108 4.58941 12.1609 3.8395C11.411 3.08958 10.3942 2.66781 9.33365 2.66675C9.15684 2.66675 8.98727 2.73699 8.86225 2.86202C8.73722 2.98704 8.66698 3.15661 8.66698 3.33342C8.66698 3.51023 8.73722 3.6798 8.86225 3.80483C8.98727 3.92985 9.15684 4.00009 9.33365 4.00009ZM15.3957 11.1594C15.782 11.5468 15.9989 12.0716 15.9989 12.6188C15.9989 13.1659 15.782 13.6907 15.3957 14.0781L14.789 14.7774C9.32898 20.0048 -3.95768 6.72142 1.18898 1.24409L1.95565 0.577421C2.3435 0.201873 2.8636 -0.0058792 3.40345 -0.000888689C3.9433 0.00410182 4.45948 0.221434 4.84032 0.604088C4.86098 0.624755 6.09632 2.22942 6.09632 2.22942C6.46287 2.61451 6.66692 3.12604 6.66605 3.65769C6.66518 4.18934 6.45946 4.7002 6.09165 5.08409L5.31965 6.05476C5.74688 7.09283 6.37503 8.03625 7.16799 8.83082C7.96095 9.62538 8.90311 10.2554 9.94032 10.6848L10.917 9.90809C11.3009 9.54057 11.8117 9.33509 12.3432 9.33434C12.8747 9.3336 13.386 9.53764 13.771 9.90409C13.771 9.90409 15.375 11.1388 15.3957 11.1594ZM14.4783 12.1288C14.4783 12.1288 12.883 10.9014 12.8623 10.8808C12.725 10.7446 12.5394 10.6682 12.346 10.6682C12.1526 10.6682 11.967 10.7446 11.8296 10.8808C11.8116 10.8994 10.467 11.9708 10.467 11.9708C10.3764 12.0429 10.2685 12.0902 10.1541 12.1079C10.0396 12.1257 9.92254 12.1133 9.81432 12.0721C8.47062 11.5718 7.25014 10.7886 6.23554 9.77548C5.22094 8.76237 4.43592 7.54304 3.93365 6.20009C3.88912 6.09039 3.8746 5.97081 3.89159 5.85365C3.90857 5.73648 3.95646 5.62595 4.03032 5.53342C4.03032 5.53342 5.10165 4.18809 5.11965 4.17076C5.25583 4.03341 5.33224 3.84783 5.33224 3.65442C5.33224 3.46101 5.25583 3.27543 5.11965 3.13809C5.09898 3.11809 3.87165 1.52142 3.87165 1.52142C3.73225 1.39643 3.55032 1.32949 3.36315 1.33432C3.17598 1.33915 2.99774 1.4154 2.86498 1.54742L2.09832 2.21409C-1.66302 6.73676 9.85098 17.6121 13.8143 13.8668L14.4216 13.1668C14.564 13.0349 14.6495 12.8529 14.66 12.6592C14.6706 12.4655 14.6054 12.2753 14.4783 12.1288Z"
+                                    fill="white"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_70_15635">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="phone-number">1800-111-222</div>
+                </div>
+                <button class="my-btn" style="margin-top: 30px">
+                    Call and Enquire
+                </button>
+            </div>
+        </div>
+        <section class="body-section">
+            <div style="display: flex; justify-content: center">
+                <div class="search-bar-container">
+                    <i class="search-icon">&#128269;</i>
+                    <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Search for Programs, Courses, or Departments"
+                    />
+                </div>
+            </div>
+            <div style="width: 100%">
+                <div class="qualifications-container">
+                    <div class="qualifications">
+                        <h1>
+                            Tell us your
+                            <span style="color: #ee7d00">qualification</span>
+                        </h1>
+                        <p>
+                            Finding the right program for your interests and
+                            goals is just a few clicks away. Explore our diverse
+                            range.
+                        </p>
+                        <br />
+                        <button
+                            class="qualification-button my-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#10modal"
+                        >
+                            <div class="qualification-button-text-container">
+                                <div class="qualification-button-text">
+                                    10th
+                                </div>
+                                <div class="qualification-button-arrow">
+                                    <svg
+                                        width="12"
+                                        height="11"
+                                        viewBox="0 0 12 11"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12 5.13496C11.9958 4.68402 11.8141 4.25288 11.4943 3.93497L7.81714 0.249251C7.65655 0.0896074 7.4393 0 7.21286 0C6.98641 0 6.76917 0.0896074 6.60857 0.249251C6.52823 0.328934 6.46447 0.423734 6.42095 0.528185C6.37743 0.632636 6.35503 0.744669 6.35503 0.857822C6.35503 0.970976 6.37743 1.08301 6.42095 1.18746C6.46447 1.29191 6.52823 1.38671 6.60857 1.46639L9.42857 4.27782H0.857143C0.629814 4.27782 0.411797 4.36813 0.251051 4.52887C0.090306 4.68962 0 4.90764 0 5.13496C0 5.36229 0.090306 5.58031 0.251051 5.74106C0.411797 5.9018 0.629814 5.99211 0.857143 5.99211H9.42857L6.60857 8.81211C6.44717 8.97237 6.35604 9.19019 6.35524 9.41765C6.35443 9.6451 6.44402 9.86356 6.60429 10.025C6.76455 10.1864 6.98237 10.2775 7.20983 10.2783C7.43728 10.2791 7.65574 10.1895 7.81714 10.0293L11.4943 6.34354C11.8162 6.02352 11.9981 5.58889 12 5.13496Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div
+                            class="modal fade"
+                            id="10modal"
+                            tabindex="-1"
+                            aria-labelledby="10modalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="10modalLabel"
+                                        >
+                                            10th
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close my-btn"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary my-btn"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="qualification-button my-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#12modal"
+                        >
+                            <div class="qualification-button-text-container">
+                                <div class="qualification-button-text">
+                                    12th
+                                </div>
+                                <div class="qualification-button-arrow">
+                                    <svg
+                                        width="12"
+                                        height="11"
+                                        viewBox="0 0 12 11"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12 5.13496C11.9958 4.68402 11.8141 4.25288 11.4943 3.93497L7.81714 0.249251C7.65655 0.0896074 7.4393 0 7.21286 0C6.98641 0 6.76917 0.0896074 6.60857 0.249251C6.52823 0.328934 6.46447 0.423734 6.42095 0.528185C6.37743 0.632636 6.35503 0.744669 6.35503 0.857822C6.35503 0.970976 6.37743 1.08301 6.42095 1.18746C6.46447 1.29191 6.52823 1.38671 6.60857 1.46639L9.42857 4.27782H0.857143C0.629814 4.27782 0.411797 4.36813 0.251051 4.52887C0.090306 4.68962 0 4.90764 0 5.13496C0 5.36229 0.090306 5.58031 0.251051 5.74106C0.411797 5.9018 0.629814 5.99211 0.857143 5.99211H9.42857L6.60857 8.81211C6.44717 8.97237 6.35604 9.19019 6.35524 9.41765C6.35443 9.6451 6.44402 9.86356 6.60429 10.025C6.76455 10.1864 6.98237 10.2775 7.20983 10.2783C7.43728 10.2791 7.65574 10.1895 7.81714 10.0293L11.4943 6.34354C11.8162 6.02352 11.9981 5.58889 12 5.13496Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <div
+                            class="modal fade"
+                            id="12modal"
+                            tabindex="-1"
+                            aria-labelledby="12modalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="12modalLabel"
+                                        >
+                                            12th
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close my-btn"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary my-btn"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="qualification-button my-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#diplomaModal"
+                        >
+                            <div class="qualification-button-text-container">
+                                <div class="qualification-button-text">
+                                    Diploma or Certificate
+                                </div>
+                                <div class="qualification-button-arrow">
+                                    <svg
+                                        width="12"
+                                        height="11"
+                                        viewBox="0 0 12 11"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12 5.13496C11.9958 4.68402 11.8141 4.25288 11.4943 3.93497L7.81714 0.249251C7.65655 0.0896074 7.4393 0 7.21286 0C6.98641 0 6.76917 0.0896074 6.60857 0.249251C6.52823 0.328934 6.46447 0.423734 6.42095 0.528185C6.37743 0.632636 6.35503 0.744669 6.35503 0.857822C6.35503 0.970976 6.37743 1.08301 6.42095 1.18746C6.46447 1.29191 6.52823 1.38671 6.60857 1.46639L9.42857 4.27782H0.857143C0.629814 4.27782 0.411797 4.36813 0.251051 4.52887C0.090306 4.68962 0 4.90764 0 5.13496C0 5.36229 0.090306 5.58031 0.251051 5.74106C0.411797 5.9018 0.629814 5.99211 0.857143 5.99211H9.42857L6.60857 8.81211C6.44717 8.97237 6.35604 9.19019 6.35524 9.41765C6.35443 9.6451 6.44402 9.86356 6.60429 10.025C6.76455 10.1864 6.98237 10.2775 7.20983 10.2783C7.43728 10.2791 7.65574 10.1895 7.81714 10.0293L11.4943 6.34354C11.8162 6.02352 11.9981 5.58889 12 5.13496Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <div
+                            class="modal fade"
+                            id="diplomaModal"
+                            tabindex="-1"
+                            aria-labelledby="diplomaModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="postDiplomaModalLabel"
+                                        >
+                                            Diploma or Certificate
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close my-btn"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary my-btn"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="qualification-button my-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#gradModal"
+                        >
+                            <div class="qualification-button-text-container">
+                                <div class="qualification-button-text">
+                                    Graduation
+                                </div>
+                                <div class="qualification-button-arrow">
+                                    <svg
+                                        width="12"
+                                        height="11"
+                                        viewBox="0 0 12 11"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12 5.13496C11.9958 4.68402 11.8141 4.25288 11.4943 3.93497L7.81714 0.249251C7.65655 0.0896074 7.4393 0 7.21286 0C6.98641 0 6.76917 0.0896074 6.60857 0.249251C6.52823 0.328934 6.46447 0.423734 6.42095 0.528185C6.37743 0.632636 6.35503 0.744669 6.35503 0.857822C6.35503 0.970976 6.37743 1.08301 6.42095 1.18746C6.46447 1.29191 6.52823 1.38671 6.60857 1.46639L9.42857 4.27782H0.857143C0.629814 4.27782 0.411797 4.36813 0.251051 4.52887C0.090306 4.68962 0 4.90764 0 5.13496C0 5.36229 0.090306 5.58031 0.251051 5.74106C0.411797 5.9018 0.629814 5.99211 0.857143 5.99211H9.42857L6.60857 8.81211C6.44717 8.97237 6.35604 9.19019 6.35524 9.41765C6.35443 9.6451 6.44402 9.86356 6.60429 10.025C6.76455 10.1864 6.98237 10.2775 7.20983 10.2783C7.43728 10.2791 7.65574 10.1895 7.81714 10.0293L11.4943 6.34354C11.8162 6.02352 11.9981 5.58889 12 5.13496Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div
+                            class="modal fade"
+                            id="gradModal"
+                            tabindex="-1"
+                            aria-labelledby="gradModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="gradModalLabel"
+                                        >
+                                            Graduation
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close my-btn"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary my-btn"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="qualification-button my-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#postGradModal"
+                        >
+                            <div class="qualification-button-text-container">
+                                <div class="qualification-button-text">
+                                    Post Graduation
+                                </div>
+                                <div class="qualification-button-arrow">
+                                    <svg
+                                        width="12"
+                                        height="11"
+                                        viewBox="0 0 12 11"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12 5.13496C11.9958 4.68402 11.8141 4.25288 11.4943 3.93497L7.81714 0.249251C7.65655 0.0896074 7.4393 0 7.21286 0C6.98641 0 6.76917 0.0896074 6.60857 0.249251C6.52823 0.328934 6.46447 0.423734 6.42095 0.528185C6.37743 0.632636 6.35503 0.744669 6.35503 0.857822C6.35503 0.970976 6.37743 1.08301 6.42095 1.18746C6.46447 1.29191 6.52823 1.38671 6.60857 1.46639L9.42857 4.27782H0.857143C0.629814 4.27782 0.411797 4.36813 0.251051 4.52887C0.090306 4.68962 0 4.90764 0 5.13496C0 5.36229 0.090306 5.58031 0.251051 5.74106C0.411797 5.9018 0.629814 5.99211 0.857143 5.99211H9.42857L6.60857 8.81211C6.44717 8.97237 6.35604 9.19019 6.35524 9.41765C6.35443 9.6451 6.44402 9.86356 6.60429 10.025C6.76455 10.1864 6.98237 10.2775 7.20983 10.2783C7.43728 10.2791 7.65574 10.1895 7.81714 10.0293L11.4943 6.34354C11.8162 6.02352 11.9981 5.58889 12 5.13496Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div
+                            class="modal fade"
+                            id="postGradModal"
+                            tabindex="-1"
+                            aria-labelledby="postGradModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="postGradModalLabel"
+                                        >
+                                            Post Graduation
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close btn my-btn"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary my-btn"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        class="qualifications-img"
+                        src="images/qualifications.png"
+                    />
+                </div>
+            </div>
+            <div>
+                <div class="carousel-header">
+                    Already <span style="color: #ee7d00">Appeared</span>
+                </div>
+                <div class="carousel-sub-header">
+                    Finding the right program for your interests and goals is
+                    just a few clicks away. Explore our diverse range.
+                </div>
+                <div class="owl-carousel carousel">
+                    <div class="carousel-item-div">
+                        <img class="carousel-img" src="images/lpunest.png" />
+                        <div class="carousel-item-text">
+                            <h1>LPUNEST</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Sed amet
+                                mattis donec pulvinar enim id sed mauris urna.
+                            </p>
+                            <div class="learn-more">
+                                Learn More
+                                <svg
+                                    width="14"
+                                    height="8"
+                                    viewBox="0 0 14 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13.8396 3.61289L13.8391 3.61237L10.9816 0.768623C10.7675 0.555588 10.4213 0.556381 10.2082 0.770482C9.9951 0.984557 9.99592 1.33081 10.21 1.54387L12.1285 3.45312H0.546875C0.244836 3.45312 0 3.69796 0 4C0 4.30204 0.244836 4.54687 0.546875 4.54687H12.1285L10.21 6.45612C9.99594 6.66919 9.99512 7.01544 10.2082 7.22951C10.4213 7.44364 10.7676 7.44438 10.9816 7.23137L13.8391 4.38762L13.8396 4.3871C14.0538 4.17333 14.0531 3.82596 13.8396 3.61289Z"
+                                        fill="#2885C5"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-div">
+                        <img class="carousel-img" src="images/CUET.png" />
+                        <div class="carousel-item-text">
+                            <h1>CUET</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Sed amet
+                                mattis donec pulvinar enim id sed mauris urna.
+                            </p>
+                            <div class="learn-more">
+                                Learn More
+                                <svg
+                                    width="14"
+                                    height="8"
+                                    viewBox="0 0 14 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13.8396 3.61289L13.8391 3.61237L10.9816 0.768623C10.7675 0.555588 10.4213 0.556381 10.2082 0.770482C9.9951 0.984557 9.99592 1.33081 10.21 1.54387L12.1285 3.45312H0.546875C0.244836 3.45312 0 3.69796 0 4C0 4.30204 0.244836 4.54687 0.546875 4.54687H12.1285L10.21 6.45612C9.99594 6.66919 9.99512 7.01544 10.2082 7.22951C10.4213 7.44364 10.7676 7.44438 10.9816 7.23137L13.8391 4.38762L13.8396 4.3871C14.0538 4.17333 14.0531 3.82596 13.8396 3.61289Z"
+                                        fill="#2885C5"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-div">
+                        <img class="carousel-img" src="images/IIT-JEE.png" />
+                        <div class="carousel-item-text">
+                            <h1>IIT/JEE</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Sed amet
+                                mattis donec pulvinar enim id sed mauris urna.
+                            </p>
+                            <div class="learn-more">
+                                Learn More
+                                <svg
+                                    width="14"
+                                    height="8"
+                                    viewBox="0 0 14 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13.8396 3.61289L13.8391 3.61237L10.9816 0.768623C10.7675 0.555588 10.4213 0.556381 10.2082 0.770482C9.9951 0.984557 9.99592 1.33081 10.21 1.54387L12.1285 3.45312H0.546875C0.244836 3.45312 0 3.69796 0 4C0 4.30204 0.244836 4.54687 0.546875 4.54687H12.1285L10.21 6.45612C9.99594 6.66919 9.99512 7.01544 10.2082 7.22951C10.4213 7.44364 10.7676 7.44438 10.9816 7.23137L13.8391 4.38762L13.8396 4.3871C14.0538 4.17333 14.0531 3.82596 13.8396 3.61289Z"
+                                        fill="#2885C5"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-div">
+                        <img class="carousel-img" src="images/CAT.png" />
+                        <div class="carousel-item-text">
+                            <h1>CAT/MAT</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Sed amet
+                                mattis donec pulvinar enim id sed mauris urna.
+                            </p>
+                            <div class="learn-more">
+                                Learn More
+                                <svg
+                                    width="14"
+                                    height="8"
+                                    viewBox="0 0 14 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13.8396 3.61289L13.8391 3.61237L10.9816 0.768623C10.7675 0.555588 10.4213 0.556381 10.2082 0.770482C9.9951 0.984557 9.99592 1.33081 10.21 1.54387L12.1285 3.45312H0.546875C0.244836 3.45312 0 3.69796 0 4C0 4.30204 0.244836 4.54687 0.546875 4.54687H12.1285L10.21 6.45612C9.99594 6.66919 9.99512 7.01544 10.2082 7.22951C10.4213 7.44364 10.7676 7.44438 10.9816 7.23137L13.8391 4.38762L13.8396 4.3871C14.0538 4.17333 14.0531 3.82596 13.8396 3.61289Z"
+                                        fill="#2885C5"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-view-all-container">
+                    <button class="my-btn view-all-btn">View All</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="embedded-yt">
+                <div>
+                    <div class="text-div">
+                        <h1>Watch This Video</h1>
+                        <p>
+                            Finding the right program for your interests and
+                            goals is just a few clicks away. Explore our diverse
+                            range.
+                        </p>
+                    </div>
+                </div>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/GPRVlA6jIHI?controls=0&modestbranding=1&rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                ></iframe>
+                <svg
+                    style="
+                        position: absolute;
+                        top: 60%;
+                        left: 22px;
+                        z-index: 10;
+                    "
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="6.5"
+                        cy="6.5"
+                        r="6.5"
+                        transform="matrix(-1 0 0 1 13 0)"
+                        fill="#FFF7F0"
+                    />
+                </svg>
+                <svg
+                    style="position: absolute; top: 43%; left: 0%; z-index: 10"
+                    width="17"
+                    height="59"
+                    viewBox="0 0 17 59"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="29.5"
+                        cy="29.5"
+                        r="29.5"
+                        transform="matrix(-1 0 0 1 17 0)"
+                        fill="#FFF7F0"
+                    />
+                </svg>
+                <svg
+                    style="
+                        position: absolute;
+                        top: 33%;
+                        left: 35px;
+                        z-index: 10;
+                    "
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="11.5"
+                        cy="11.5"
+                        r="11.5"
+                        transform="matrix(-1 0 0 1 23 0)"
+                        fill="#FFF7F0"
+                    />
+                </svg>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+            crossorigin="anonymous"
+        ></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+    </body>
+    <footer>
+        <div class="upper-footer">
+            <div>
+                <ul style="list-style: none">
+                    <li
+                        style="
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                            font-size: 14px;
+                        "
+                    >
+                        Resources
+                    </li>
+                    <li>Want to learn more?</li>
+                    <li>Talk to Student Ambassador</li>
+                    <li>Book a campus visit</li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style: none">
+                    <li style="margin-bottom: 20px">&nbsp;</li>
+                    <li>Instant Campus Tour</li>
+                    <li>I am Ready for Admission</li>
+                    <li>Talk to Alumni</li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style: none">
+                    <li
+                        style="
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            font-size: 22px;
+                        "
+                    >
+                        360° View
+                    </li>
+                    <li>Download App</li>
+                    <li>Subscribe Newsletter</li>
+                    <li>
+                        <span style="font-weight: 600">Tel:</span> +1 (234)
+                        567-8900
+                    </li>
+                    <li>
+                        <span style="font-weight: 600">Tel:</span> +1 (234)
+                        567-8901
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div>
+                <img src="images/favicon.png" alt="LPU Logo" />
+                <ul style="list-style: none">
+                    <li>
+                        India's Best Private University* Lovely Professional
+                        University,
+                    </li>
+                    <li>
+                        Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (India)
+                        -144411.
+                    </li>
+                    <li>Website: https://www.lpu.in</li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style: none; text-align: right">
+                    <li>Anti-Ragging / ICC / Privacy Policy / Disclaimer /</li>
+                    <li>Student Grievance Redressal / RTI / Feedback</li>
+                    <li style="font-size: 8px">
+                        Problem with this page? Contact Webmaster
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</html>
